@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: apex-omniroute
+    env: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npx omniroute serve --port $PORT --no-open --log
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+

@@ -1,0 +1,5 @@
+node_modules/
+.env
+.omniroute/
+npm-debug.log*
+

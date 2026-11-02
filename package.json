@@ -1,0 +1,16 @@
+{
+  "name": "omniroute-render-gateway",
+  "version": "1.0.0",
+  "description": "OmniRoute AI Gateway for UltimateSMP deployed on Render.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx omniroute serve --port $PORT --no-open --log"
+  },
+  "dependencies": {
+    "omniroute": "latest"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
+
